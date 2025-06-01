@@ -69,7 +69,7 @@ async def handle_box(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.message.reply_photo(photo=img_file, caption=result["caption"])
 
 def main():
-    TOKEN = os.environ.get("BOT_TOKEN")
+    TOKEN = os.environ.get("7561016807:AAFSd9qksZTevryHjvqB_ntVWk1745YDSXU")
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(handle_box))
